@@ -11,7 +11,7 @@ class AlarmService
   def run
     message = {
       type: "text",
-      text: "現在時間：#{Time.current} 趕快起床吧"
+      text: "現在時間：#{Time.now} 趕快起床吧"
     }
     client.push_message('U95cd3295329a7df442d76bb7f775a163', message)
   end
